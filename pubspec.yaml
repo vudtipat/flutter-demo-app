@@ -57,6 +57,7 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+  # เพิ่ม Asset Image Path เพื่อสามารถเข้าถึงได้
   assets:
     - img/welcome-one.png
     - img/welcome-two.png
