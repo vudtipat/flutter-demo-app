@@ -1,4 +1,7 @@
+import 'package:demo_flutter_app/widget/app_text.dart';
 import 'package:flutter/material.dart';
+
+import '../widget/app_large_text.dart';
 
 class WelcomePage extends StatefulWidget {
   const WelcomePage({super.key});
@@ -30,6 +33,28 @@ class _WelcomePageState extends State<WelcomePage> {
                   ),
                   fit: BoxFit.cover
               )
+            ),
+            child: Container(
+              margin: const EdgeInsets.only(top: 150,left: 20,right: 20),
+              child: Row(
+                children: [
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      AppLargeText(size:30,text: "Trip"),
+                      AppText(size: 30,text: "Mountain"),
+                      SizedBox(height: 20),
+                      Container(
+                        width: 245,
+                        child: AppText(
+                          text: "Mountain hikes give you an incredible sense of freedom along with endurance test.",
+                          color: Color(0xFF878593),
+                          size: 14),
+                      )
+                    ],
+                  )
+                ],
+              ),
             ),
           );
       }),
